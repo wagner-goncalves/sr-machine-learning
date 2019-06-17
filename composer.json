@@ -1,0 +1,35 @@
+{
+    "name": "srcidadao/machine-learning",
+    "description": "Processador de predição para o aplicativo Sr.Cidadão",
+    "keywords": ["Políticos","Acompanhamento","Fiscalização", "Cidadania"],
+    "homepage": "http://www.srcidadao.com.br",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flávia Rodrigues Cantagalli",
+            "email": "flaviacantagalli@gmail.com",
+            "homepage": "http://www.srcidadao.com.br"
+        }
+    ],
+	"require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "catfan/Medoo": "*",
+        "vlucas/phpdotenv": "^2.4",
+		"php-ai/php-ml": "dev-master"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"SR\\" : "src/"
+		}	
+	},
+	"repositories": [
+		{
+		  "type": "vcs",
+		  "url": "https://github.com/atompulse/php-ml-56",
+		  "no-api": true
+		}
+	]
+}
